@@ -1,0 +1,12 @@
+sequences:
+- protein:
+    id: A
+    name: Hemoglobin subunit beta
+    sequence: MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH
+- ligand:
+    id: B
+    name: Random_Clozapine_vs_Hemoglobin
+    smiles: CN1CCN(CC1)C2=NC3=C(C=CC(=C3)Cl)NC4=CC=CC=C42
+properties:
+- affinity:
+    binder: B

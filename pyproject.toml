@@ -1,0 +1,28 @@
+[project]
+name = "boltz-2-bindings"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pascal Brokmeier", email = "pascal@everycure.org" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "boltz>=2.0.3",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+    "typer>=0.16.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "types-beautifulsoup4>=4.12.0.20250516",
+]
+
+[project.scripts]
+b2aff = "boltz_2_bindings.cli:app"

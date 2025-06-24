@@ -1,0 +1,11 @@
+**/.env
+**/.DS_Store
+**/.venv
+**/.pytest_cache
+**/.ruff_cache
+**/.vscode
+**/.idea
+**/__pycache__
+**/.mypy_cache
+boltz_results_affinity/
+**/py.typed

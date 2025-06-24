@@ -1,0 +1,135 @@
+# This YAML file provides a curated list of drug-protein pairs for testing binding affinity models.
+# It is divided into four categories:
+# 1. Known Interactions: Clinically established and effective drug-target pairs.
+# 2. Known Non-Interactions: Drugs paired with proteins from unrelated pathways.
+# 3. Random Pairs: Arbitrary pairings for use as a negative control/baseline.
+# 4. Potential / Discussed Interactions: Pairs under research or discussed in literature.
+
+pairs:
+  # --- 1. Known Interactions (High Affinity Expected) ---
+  - drug_name: Imatinib
+    drugbank_id: DB00619 # Imatinib (Gleevec), a chemotherapy drug
+    uniprot_id: P00519  # ABL1 (Abelson murine leukemia viral oncogene homolog 1), the target of Imatinib
+  - drug_name: Lisinopril
+    drugbank_id: DB00722 # Lisinopril, an ACE inhibitor for high blood pressure
+    uniprot_id: P12821  # ACE (Angiotensin-converting enzyme)
+  - drug_name: Sildenafil
+    drugbank_id: DB00203 # Sildenafil (Viagra), used to treat erectile dysfunction
+    uniprot_id: O76074  # PDE5A (Phosphodiesterase 5A), the target of Sildenafil
+  - drug_name: Atorvastatin
+    drugbank_id: DB01076 # Atorvastatin (Lipitor), a statin to lower cholesterol
+    uniprot_id: P04035  # HMGCR (HMG-CoA reductase), the enzyme inhibited by statins
+  - drug_name: Cetuximab
+    drugbank_id: DB00002 # Cetuximab, a monoclonal antibody for cancer treatment
+    uniprot_id: P00533  # EGFR (Epidermal growth factor receptor)
+  - drug_name: Gliclazide
+    drugbank_id: DB01120 # Gliclazide, an anti-diabetic medication
+    uniprot_id: Q9Y6K8  # SUR1 (Sulfonylurea receptor 1), part of the K-ATP channel
+  - drug_name: Donepezil
+    drugbank_id: DB00843 # Donepezil, used to treat Alzheimer's disease
+    uniprot_id: P22303  # ACHE (Acetylcholinesterase), the target of Donepezil
+  - drug_name: Ciprofloxacin
+    drugbank_id: DB00537 # Ciprofloxacin, an antibiotic
+    uniprot_id: P0A8V6  # DNA gyrase subunit A (in E. coli), a common bacterial target
+  - drug_name: Zidovudine
+    drugbank_id: DB00495 # Zidovudine (AZT), an antiretroviral for HIV/AIDS
+    uniprot_id: P04585  # HIV-1 Reverse Transcriptase
+  - drug_name: Methotrexate
+    drugbank_id: DB00563 # Methotrexate, used in chemotherapy and for autoimmune diseases
+    uniprot_id: P00374  # DHFR (Dihydrofolate reductase)
+
+  # --- 2. Known Non-Interactions (No/Low Affinity Expected) ---
+  - drug_name: Aspirin_vs_InsulinReceptor
+    drugbank_id: DB00945 # Aspirin, an NSAID
+    uniprot_id: P06213  # INSR (Insulin Receptor), unrelated to Aspirin's primary mechanism
+  - drug_name: Metformin_vs_EGFR
+    drugbank_id: DB00331 # Metformin, an anti-diabetic drug
+    uniprot_id: P00533  # EGFR (Epidermal growth factor receptor), a cancer target
+  - drug_name: Lisinopril_vs_Beta2AdrenergicReceptor
+    drugbank_id: DB00722 # Lisinopril, an ACE inhibitor
+    uniprot_id: P07550  # ADRB2 (Beta-2 adrenergic receptor), target for asthma drugs
+  - drug_name: Sildenafil_vs_HMGCR
+    drugbank_id: DB00203 # Sildenafil (Viagra)
+    uniprot_id: P04035  # HMGCR (HMG-CoA reductase), target of statins
+  - drug_name: Paracetamol_vs_HIV_Protease
+    drugbank_id: DB00316 # Paracetamol (Acetaminophen), a pain reliever
+    uniprot_id: Q72874  # HIV-1 Protease, target for antiretroviral drugs
+  - drug_name: Ibuprofen_vs_Thrombin
+    drugbank_id: DB01050 # Ibuprofen, an NSAID
+    uniprot_id: P00734  # F2 (Thrombin), a key protein in blood coagulation
+  - drug_name: Caffeine_vs_DNA_Polymerase
+    drugbank_id: DB00201 # Caffeine, a stimulant
+    uniprot_id: P0A9Z9  # DNA Polymerase III (in E. coli), involved in DNA replication
+  - drug_name: VitaminC_vs_ACE2
+    drugbank_id: DB00126 # Vitamin C (Ascorbic Acid)
+    uniprot_id: Q9BYF1  # ACE2 (Angiotensin-converting enzyme 2), SARS-CoV-2 entry receptor
+  - drug_name: Digoxin_vs_Cyclooxygenase1
+    drugbank_id: DB00390 # Digoxin, a cardiac glycoside
+    uniprot_id: P23219  # PTGS1 (Cyclooxygenase-1), target of NSAIDs
+  - drug_name: PenicillinG_vs_AlcoholDehydrogenase
+    drugbank_id: DB01053 # Penicillin G, an antibiotic
+    uniprot_id: P07327  # ADH1A (Alcohol dehydrogenase 1A)
+
+  # --- 3. Random Pairs (No/Low Affinity Expected, for Baseline) ---
+  - drug_name: Random_Omeprazole_vs_Myoglobin
+    drugbank_id: DB00338 # Omeprazole, a proton-pump inhibitor
+    uniprot_id: P02144  # MB (Myoglobin), an oxygen-binding protein in muscle
+  - drug_name: Random_Furosemide_vs_Lactase
+    drugbank_id: DB00695 # Furosemide, a diuretic
+    uniprot_id: P09848  # LCT (Lactase), enzyme that digests lactose
+  - drug_name: Random_Diazepam_vs_Actin
+    drugbank_id: DB00829 # Diazepam (Valium), a benzodiazepine
+    uniprot_id: P60709  # ACTB (Actin, cytoplasmic 1)
+  - drug_name: Random_Warfarin_vs_Keratin
+    drugbank_id: DB00682 # Warfarin, an anticoagulant
+    uniprot_id: P02533  # KRT1 (Keratin, type II cytoskeletal 1)
+  - drug_name: Random_Clozapine_vs_Hemoglobin
+    drugbank_id: DB00363 # Clozapine, an antipsychotic
+    uniprot_id: P68871  # HBB (Hemoglobin subunit beta)
+  - drug_name: Random_Losartan_vs_Titin
+    drugbank_id: DB00678 # Losartan, an angiotensin II receptor blocker
+    uniprot_id: Q8WZ42  # TTN (Titin), a giant protein in muscle
+  - drug_name: Random_Amiodarone_vs_Ferritin
+    drugbank_id: DB01118 # Amiodarone, an antiarrhythmic agent
+    uniprot_id: P02792  # FTH1 (Ferritin heavy chain 1)
+  - drug_name: Random_Risperidone_vs_Collagen
+    drugbank_id: DB00734 # Risperidone, an antipsychotic
+    uniprot_id: P02452  # COL1A1 (Collagen type I alpha 1 chain)
+  - drug_name: Random_Glyburide_vs_Albumin
+    drugbank_id: DB01016 # Glyburide, an anti-diabetic drug
+    uniprot_id: P02768  # ALB (Serum albumin)
+  - drug_name: Random_Epinephrine_vs_Trypsin
+    drugbank_id: DB00668 # Epinephrine (Adrenaline)
+    uniprot_id: P07477  # PRSS1 (Trypsin-1)
+
+  # --- 4. Potential / Discussed Interactions (Research Interest) ---
+  - drug_name: Metformin_vs_AMPK
+    drugbank_id: DB00331 # Metformin, whose indirect mechanism involves this protein
+    uniprot_id: Q13131  # PRKAA1 (AMP-activated protein kinase catalytic subunit alpha-1)
+  - drug_name: Ivermectin_vs_SARS_CoV2_Importin
+    drugbank_id: DB00874 # Ivermectin, an antiparasitic drug studied for COVID-19
+    uniprot_id: Q14974  # KPNA2 (Importin subunit alpha-2), involved in nuclear transport
+  - drug_name: Hydroxychloroquine_vs_ACE2
+    drugbank_id: DB01611 # Hydroxychloroquine, studied early in the COVID-19 pandemic
+    uniprot_id: Q9BYF1  # ACE2 (Angiotensin-converting enzyme 2)
+  - drug_name: Aspirin_vs_PI3K
+    drugbank_id: DB00945 # Aspirin, being investigated for anti-cancer effects
+    uniprot_id: P42336  # PIK3CA (Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha)
+  - drug_name: Raloxifene_vs_SARS_CoV2_Mpro
+    drugbank_id: DB00481 # Raloxifene, an osteoporosis drug, identified as a potential Mpro inhibitor
+    uniprot_id: P0DTD1  # SARS-CoV-2 Main Protease (Mpro, 3CLpro)
+  - drug_name: ValproicAcid_vs_HDAC
+    drugbank_id: DB00313 # Valproic Acid, an anticonvulsant with known HDAC inhibition
+    uniprot_id: Q13547  # HDAC1 (Histone deacetylase 1)
+  - drug_name: Dapagliflozin_vs_SGLT2
+    drugbank_id: DB06292 # Dapagliflozin, an SGLT2 inhibitor for diabetes and heart failure
+    uniprot_id: P31639  # SLC5A2 (Sodium/glucose cotransporter 2)
+  - drug_name: Baricitinib_vs_JAK1
+    drugbank_id: DB11817 # Baricitinib, a JAK inhibitor used for arthritis and studied for COVID-19
+    uniprot_id: P23458  # JAK1 (Janus kinase 1)
+  - drug_name: Semaglutide_vs_GLP1R
+    drugbank_id: DB13928 # Semaglutide (Ozempic/Wegovy), a GLP-1 agonist for diabetes and weight loss
+    uniprot_id: P43220  # GLP1R (Glucagon-like peptide 1 receptor)
+  - drug_name: Minoxidil_vs_KATP_Channel
+    drugbank_id: DB00350 # Minoxidil, used for hair loss, acts as a potassium channel opener
+    uniprot_id: P22419  # KCNJ8 (ATP-sensitive inward rectifier potassium channel 8), part of the K-ATP channel in smooth muscle

@@ -1,0 +1,12 @@
+sequences:
+- protein:
+    id: A
+    name: Myoglobin
+    sequence: MGLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASEDLKKHGATVLTALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQVLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG
+- ligand:
+    id: B
+    name: Random_Omeprazole_vs_Myoglobin
+    smiles: CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC
+properties:
+- affinity:
+    binder: B

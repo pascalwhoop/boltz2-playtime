@@ -1,0 +1,12 @@
+sequences:
+- protein:
+    id: A
+    name: Ferritin light chain
+    sequence: MSSQIRQNYSTDVEAAVNSLVNLYLQASYTYLSLGFYFDRDDVALEGVSHFFRELAEEKREGYERLLKMQNQRGGRALFQDIKKPAEDEWGKTPDAMKAAMALEKKLNQALLDLHALGSARTDPHLCDFLETHFLDEEVKLIKKMGDHLTNLHRLGGPEAGLGEYLFERLTLKHD
+- ligand:
+    id: B
+    name: Random_Amiodarone_vs_Ferritin
+    smiles: CCCCC1=C(C2=CC=CC=C2O1)C(=O)C3=CC(=C(C(=C3)I)OCCN(CC)CC)I
+properties:
+- affinity:
+    binder: B

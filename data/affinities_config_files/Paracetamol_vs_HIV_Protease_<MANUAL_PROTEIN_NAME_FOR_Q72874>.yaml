@@ -1,0 +1,12 @@
+sequences:
+- protein:
+    id: A
+    name: <MANUAL_PROTEIN_NAME_FOR_Q72874>
+    sequence: <MANUAL_SEQUENCE_FOR_Q72874>
+- ligand:
+    id: B
+    name: Paracetamol_vs_HIV_Protease
+    smiles: CC(=O)NC1=CC=C(C=C1)O
+properties:
+- affinity:
+    binder: B
